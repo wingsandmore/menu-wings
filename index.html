@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital - Wings & More</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR DEL MENÚ -->
+    <main class="menu-viewport">
+        <div class="menu-stage" id="menuStage">
+            <img src="menu_completo.jpg" alt="Menú Wings & More" class="menu-image" id="menuImage">
+        </div>
+    </main>
+
+    <!-- BOTONES FLOTANTES -->
+    <nav class="fab-container">
+        <a href="https://www.facebook.com/share/1AvrC49ZcA/?mibextid=wwXIfr" class="fab fb" target="_blank">
+            <i class='bx bxl-facebook'></i>
+        </a>
+
+        <a href="https://www.instagram.com/wingsandmore.alesso" class="fab ig" target="_blank">
+            <i class='bx bxl-instagram'></i>
+        </a>
+
+        <a href="https://wa.me/526634350446" class="fab wa" target="_blank">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+    </nav>
+
+    <!-- MODAL -->
+    <div id="confirm-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i id="modal-social-icon" class='bx'></i>
+            </div>
+            <h3>¿Abrir Red Social?</h3>
+            <p>Vas a salir del menú para ir a <span id="social-name"></span>.</p>
+
+            <div class="modal-actions">
+                <button id="btn-cancel" class="btn-sec">Cancelar</button>
+                <a id="btn-confirm" href="#" target="_blank" class="btn-pri">Continuar</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
